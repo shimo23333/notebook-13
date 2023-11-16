@@ -1,2 +1,2 @@
-# notebook 代辦事項(打勾+刪除線)
+# notebook 待辦事項
 https://shimo23333.github.io/notebook/
