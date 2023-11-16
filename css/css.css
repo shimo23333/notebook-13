@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 50px;
+    font-family: "Noto Sans TC", sans-serif;
+    background-color: rgb(232, 229, 224);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px 0 25px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.shadow {
+
+    width: 300px;
+    height: 100%;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 10%);
+}
+
+/*上方標題欄位*/
+.nav {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(239, 237, 240);
+}
+
+.title-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 25px 0 15px 0;
+    justify-content: space-between;
+}
+
+.week-and-date {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.st {
+    font-size: 10pt;
+}
+
+.week-and-date {
+    font-size: 16pt;
+    color: rgb(127, 122, 156);
+    font-weight: bold;
+}
+
+.month {
+    font-size: 10pt;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.tasks {
+    font-size: 10pt;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/*打勾勾的地方*/
+.row1 {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: #666;
+    height: 500px;
+}
+
+.row1 .container .dialog {
+    display: grid;
+    grid-template-columns: auto 20px;
+    padding: 40px 0 0 0;
+    align-items: center;
+    position: relative;
+}
+
+.msg {}
+
+.msg::after {}
+
+/*dialog在done的時候，把msg加上刪除線*/
+.dialog.done .msg {
+    color: #666;
+    text-decoration-line: line-through;
+}
+
+
+
+.row1 .container .dialog .button {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid rgb(239, 237, 240);
+}
+
+/*按下button之後button變成綠色背景色*/
+.row1 .container .dialog.done .button {
+    background-color: rgb(77, 210, 154);
+    border: 2px solid rgb(77, 210, 154);
+}
+
+.tick {
+    display: none;
+}
+
+.row1 .container .dialog.done .tick {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 41px;
+}

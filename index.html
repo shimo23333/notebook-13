@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--讓網頁在手機上有正確的顯示比例-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/css.css" />
+        <!--icon的連結-->
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link rel="icon" href="images/favicon.png">
+    </head>
+
+    <body>
+        <div class="shadow">
+        <!--電腦選單-->
+        <nav class="nav">
+            <div class="container">
+                <div class="title-grid">
+                    <div class="title">
+                        <div class="week-and-date">
+                            <div>Tuseday,31</div>
+                            <div class="st">st</div>
+                        </div>
+                        <div class="month">August</div> 
+                    </div>
+                    <div class="tasks">6 Tasks</div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row1">
+            <div class="container">
+                <div class="dialog">
+                    <span class="msg">10 min Meditation</span>
+                    <button class="button" onclick="done(this)"></button>
+                    <img class="tick" onclick="done(this)" src="images/tick.png"/>
+                </div>
+                <div class="dialog">
+                    <span class="msg">Pack lunches</span>
+                    <button class="button"  onclick="done(this)"></button>
+                    <img class="tick" onclick="done(this)" src="images/tick.png"/>
+                </div>
+                <div class="dialog">
+                    <span class="msg">Doctor's appontment</span>
+                    <button class="button"  onclick="done(this)"></button>
+                    <img class="tick" onclick="done(this)" src="images/tick.png"/>
+                </div>
+                <div class="dialog">
+                    <span class="msg">Zoom meeting with john</span>
+                    <button class="button"  onclick="done(this)"></button>
+                    <img class="tick" onclick="done(this)" src="images/tick.png"/>
+                </div>
+                <div class="dialog">
+                    <span class="msg">Begin QA for the product</span>
+                    <button class="button"  onclick="done(this)"></button>
+                    <img class="tick" onclick="done(this)" src="images/tick.png"/>
+                </div>
+                <div class="dialog">
+                    <span class="msg">Go for a walk</span>
+                    <button class="button"  onclick="done(this)"></button>
+                    <img class="tick" onclick="done(this)" src="images/tick.png"/>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            function done(btn) {
+                btn.parentNode.classList.toggle("done");
+            }
+            
+        </script>
+        </div>
+    </body>
+</html>
